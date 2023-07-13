@@ -1,0 +1,81 @@
+.header-wraper {
+    background-color: #cadefc;
+    width: 100%;
+    height: auto;
+    /* position: fixed;
+    z-index: 9999; */
+  }
+  .header-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .nav-ul-items {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+  }
+  .nav-a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.188rem;
+    color: #0a0909;
+  }
+  .burger-bar {
+    display: none;
+    cursor: pointer;
+  }
+  .burger-line {
+    width: 1.5rem;
+    height: 0.2rem;
+    margin: 0.3rem auto;
+    transition: all 0.2s ease-in-out;
+    background-color: #2b2626;
+  }
+  
+/* First section style */
+.mybooks-section {
+    background-color: #defcf9;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    height: 100vh; */ 
+  }
+  
+  .mybooks-container {
+    text-align: center;
+  }  
+  .mybooks-container h2{
+  font-family: 'Nunito-bold', sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.558rem;
+  color: #0a0909;
+  margin: 0 auto;
+  padding: 1.625rem;
+  }
+.book-item {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border: 1px solid #552b2b;
+    padding: 1rem;
+  }
+  
+  .book-details {
+    margin-top: 1rem;
+    border: 1px solid #0a0909;
+    padding: 1rem;
+    display: none; /* Initially hide book details */
+  }
+  
+  .book-details.active {
+    display: block;
+     /* Show book details when active class is present */
+  }
+  

@@ -29,4 +29,9 @@
         left: 0;
     }
 }
-
+@media (max-width: 768px) {
+  .book-item,
+  .book-details {
+    width: 90%;
+  }
+}

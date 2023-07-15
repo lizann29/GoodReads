@@ -39,8 +39,63 @@
     <section class="mybooks-section">
       <div class="mybooks-container">
         <h2>MY BOOKS</h2>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for a book by title or subtitle"
+          />
+          <button id="search-btn">Search</button>
+        </div>
         <div id="book-list"></div>
         <div id="book-details"></div>
+      </div>
+    </section>
+    <section class="addbook-section">
+      <div class="addbook-conatiner">
+        <h2>ADD BOOK HERE</h2>
+        <div class="form-wrapper">
+          <form action="#" class="actual-form" id="addbook-form" method="post">
+            <div class="actual-form-div">
+              <input
+                type="text"
+                id="title-field"
+                name="title"
+                placeholder="Enter Title of The Book"
+              />
+              <p class="error-text" id="error-title"></p>
+            </div>
+            <div class="actual-form-div">
+              <input
+                type="text"
+                id="subtitle-field"
+                name="subtitle"
+                placeholder="Enter Subtitle of The Book"
+              />
+              <p class="error-text" id="error-subtitle"></p>
+            </div>
+            <div class="actual-form-div">
+              <input
+                type="number"
+                id="isbn-input"
+                name="isbn"
+                placeholder="Enter The ISBN of The Book"
+              />
+              <p class="error-text" id="error-isbn"></p>
+            </div>
+            <div class="actual-form-div">
+              <input
+                type="email"
+                id="email-field"
+                name="email"
+                placeholder="Enter Your Email"
+              />
+              <p id="error-email"></p>
+            </div>
+            <button type="submit" class="btn-send">SUBMIT BOOK</button>
+            <!-- <button class="btn-send" type="submit">SEND</button> -->
+          </form>
+        </div>
       </div>
     </section>
     <script src="script.js"></script>

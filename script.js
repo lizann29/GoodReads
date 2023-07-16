@@ -1,5 +1,4 @@
 
-
 //burger
 let burgerBar = document.querySelector('.burger-bar');
 let ulItems = document.querySelector('.nav-ul-items');
@@ -54,7 +53,14 @@ document.getElementById('search-input').addEventListener('keypress', event => {
 });
 
 
-//fetch 
+// Add an event listener to each book item to toggle book details on click
+document.querySelectorAll('.book-item').forEach(bookItem => {
+  bookItem.addEventListener('click', () => {
+    const bookDetailsItem = bookItem.nextElementSibling;
+    toggleBookDetails(bookDetailsItem);
+  });
+});
+
 
 //  toggle function for the visibility of book details
 function toggleBookDetails(bookDetailsItem) {
@@ -133,6 +139,19 @@ formElement.addEventListener('submit', function(event){
       errors.isbn = "ISBN field should not be empty and should be at least 13 characters";
      }
 
+     let priceElement = document.getElementById('price-input').value;
+
+     if (priceElement.trim() === ""){
+      errors.price = "Price field should not be empty";
+     }
+     
+     let photoElement = document.getElementById('photo-input').value;
+
+     if (photoElement.trim() === ""){
+      errors.photo = "Please upload the photo of the book";
+     }
+     
+
      for (let item in errors){
         let errorText = document.getElementById('error-'+ item);
 
@@ -154,6 +173,8 @@ formElement.addEventListener('submit', function(event){
         formElement.reset();
     }
 });
+
+
 
 
 //email
@@ -185,3 +206,11 @@ emailField.addEventListener("input", function () {
 emailField.addEventListener('focus',function(){
   emailField.style.outline = 'none';
 })
+
+
+
+
+
+
+
+

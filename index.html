@@ -6,7 +6,7 @@
     <title>Good Reads</title>
     <link rel="icon" href="images/logo.png" />
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- <link rel="stylesheet" href="fonts/fonts.css" /> -->
+    <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
@@ -36,6 +36,7 @@
         </div>
       </div>
     </header>
+
     <section class="mybooks-section">
       <div class="mybooks-container">
         <h2>MY BOOKS</h2>
@@ -47,10 +48,13 @@
           />
           <button id="search-btn">Search</button>
         </div>
-        <div id="book-list"></div>
-        <div id="book-details"></div>
+
+        <div>
+          <div id="book-list"></div>
+          <div id="book-details"></div>
       </div>
     </section>
+
     <section class="addbook-section">
       <div class="addbook-conatiner">
         <h2>ADD BOOK HERE</h2>
@@ -85,6 +89,15 @@
             </div>
             <div class="actual-form-div">
               <input
+                type="number"
+                id="price-input"
+                name="price"
+                placeholder="Enter The price of The Book"
+              />
+              <p class="error-text" id="error-price"></p>
+            </div>
+            <div class="actual-form-div">
+              <input
                 type="email"
                 id="email-field"
                 name="email"
@@ -92,8 +105,18 @@
               />
               <p id="error-email"></p>
             </div>
+            <div class="actual-form-div">
+              <div class="upload-photo-container">
+                <input
+                  type="file"
+                  id="photo-input"
+                  name="photo"
+                  accept="image/*"
+                />
+                <p class="error-text" id="error-photo"></p>
+              </div>
+            </div>
             <button type="submit" class="btn-send">SUBMIT BOOK</button>
-            <!-- <button class="btn-send" type="submit">SEND</button> -->
           </form>
         </div>
       </div>

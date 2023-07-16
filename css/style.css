@@ -90,10 +90,9 @@
     display: block;
     margin-bottom: 0rem;
   }
-.book-details img {
-   
-    max-width: 100%;
-    object-fit: contain;
+  .book-details img {
+   max-width: 100%;
+  object-fit: contain;
   }
 
   /* search bar */
@@ -125,6 +124,8 @@
     border: none;
     cursor: pointer;
   }
+
+
   /* add book style */
 .addbook-section{
     background-color: #c3bef0;
@@ -177,21 +178,16 @@
     padding: 1.625rem;
     text-align: center; 
   }
-  
 .error-text {
     color: red;
     font-family: "Nunito";
     font-size: 0.7rem;
     align-items: baseline;
     margin-bottom: 0;
-  
-  } 
+ } 
+ /* delete arrows */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-#error-email.invalid {
-  color: red;
 }

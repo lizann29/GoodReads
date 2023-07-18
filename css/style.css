@@ -199,8 +199,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: 'Nunito', sans-serif;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
-  background-color: #cca8e9;
+  background-color: #3d0f63;
   color: #fff;
   border: none;
-  cursor: pointer;
 }

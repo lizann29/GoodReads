@@ -61,7 +61,8 @@ function toggleBookDetails(bookDetailsItem) {
 
 
 
-// Fetch 
+// fetch 
+ 
 function fetchBookDetails() {
   fetch('https://api.itbook.store/1.0/search/mongodb')
     .then(response => response.json())
@@ -96,7 +97,8 @@ function fetchBookDetails() {
 
         deleteBtn.addEventListener('click', (event) => {
           event.stopPropagation();
-          deleteBook(bookListItem);
+          const bookItem = event.target.closest('.book-item');
+          deleteBookConfirmation(bookItem);
         });
 
         bookList.appendChild(bookListItem);
@@ -108,10 +110,19 @@ function fetchBookDetails() {
     });
 }
 
+// Call the function to fetch books
+fetchBookDetails();
+
 //  delete fetched a book
 function deleteBook(bookItem) {
   const bookList = document.getElementById('book-list');
   bookList.removeChild(bookItem);
+}
+
+function deleteBookConfirmation(bookItem) {
+  if (confirm('Are you sure you want to delete this book?')) {
+    deleteBook(bookItem);
+  }
 }
 
 // calling the function to fetch books
@@ -120,6 +131,13 @@ fetchBookDetails();
 //toggle the visibility
 function toggleBookDetails(bookDetailsItem) {
   bookDetailsItem.classList.toggle('active');
+}
+
+// confirmation dialog 
+function deleteBookConfirmation(bookItem) {
+  if (confirm('Are you sure you want to delete this book?')) {
+    deleteBook(bookItem);
+  }
 }
 
 // customer-added books
@@ -132,16 +150,18 @@ function booksByCostumer(title, subtitle) {
     <button class="delete-btn">Delete</i></button>
   `;
 
-  // Event listener to show/hide book details on click
+  // Event listener to show/hide book details on click---?????
   bookListItem.addEventListener('click', () => {
     const bookDetailsItem = bookListItem.nextElementSibling;
     toggleBookDetails(bookDetailsItem);
   });
 
-  // Event listener for the delete button
+  //  delete button for customer-added books
   const deleteBtn = bookListItem.querySelector('.delete-btn');
-  deleteBtn.addEventListener('click', () => {
-    deleteBook(bookListItem);
+  deleteBtn.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const bookItem = event.target.closest('.book-item');
+    deleteBookConfirmation(bookItem);
   });
 
   return bookListItem;
@@ -252,3 +272,4 @@ emailField.addEventListener("input", function () {
 emailField.addEventListener('focus',function(){
   emailField.style.outline = 'none';
 })
+

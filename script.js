@@ -273,3 +273,21 @@ emailField.addEventListener('focus',function(){
   emailField.style.outline = 'none';
 })
 
+
+
+// smooth
+const pressMyBooks = document.getElementById('click-books');
+
+pressMyBooks.addEventListener('click', () => {
+  const sectionOne = document.querySelector('.mybooks-section');
+
+  sectionOne.scrollIntoView({ behavior: 'smooth' });
+});
+//1.
+const pressAddBooks = document.getElementById('click-addbook');
+
+pressAddBooks.addEventListener('click', () => {
+  const sectionTwo = document.querySelector('.addbook-section');
+
+  sectionTwo.scrollIntoView({ behavior: 'smooth' });
+});

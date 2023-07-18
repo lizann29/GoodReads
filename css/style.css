@@ -1,205 +1,247 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .header-wraper {
-    background-color: #cadefc;
-    width: 100%;
-    height: auto;
-    /* position: fixed;
-    z-index: 9999; */
-  }
-.header-flex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-.nav-bar {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-.nav-ul-items {
-    display: flex;
-    align-items: center;
-    gap: 2.6rem;
-  }
-.nav-a {
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.875rem;
-    line-height: 1.188rem;
-    color: #0a0909;
-  }
-.burger-bar {
-    display: none;
-    cursor: pointer;
-  }
-.burger-line {
-    width: 1.5rem;
-    height: 0.2rem;
-    margin: 0.3rem auto;
-    transition: all 0.2s ease-in-out;
-    background-color: #2b2626;
-  }
-  
-/* First section style */
-.mybooks-section {
-    background-color: #defcf9;
-    display: flex;
-    justify-content: center;
-    /* align-items: center;
-    height: 100vh; */ 
-  }
-  
-.mybooks-container {
-    text-align: center;
-  }  
-.mybooks-container h2{
-  font-family: 'Nunito-bold', sans-serif;
-  font-size: 1.875rem;
-  line-height: 2.558rem;
-  color: #0a0909;
-  margin: 0 auto;
-  padding: 1.625rem;
-  }
-.book-item {
-    cursor: pointer;
-    margin-bottom: 0;
-    margin-bottom: 1rem; 
-    border: 1px solid #cca8e9;
-    padding: 1rem;
-    font-family: 'Nunito', sans-serif;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-.book-item.expanded {
+  background-color: #cadefc;
   width: 100%;
-  margin: 1rem auto;
-  }
-  
-.book-details {
-    font-family: 'Nunito', sans-serif;
-    margin-top: 0.5rem;
-    border: 1px solid #cca8e9;
-    padding: 1rem;
-    display: none;
-    width: 60%;
-    margin: auto;
-  }
-.book-details.active {
-    display: block;
-    margin-bottom: 0rem;
-  }
-  .book-details img {
-   max-width: 100%;
-  object-fit: contain;
-  }
-
-  /* search bar */
-.search-bar {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-#search-input {
-    flex: 1;
-    padding: 0.5rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.875rem;
-    border: 0.5px solid #cca8e9;  
-
-  }
-  
-#search-btn {
-    margin-left: 0.5rem;
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.875rem;
-    padding: 0.5rem 1rem;
-    background-color: #cca8e9;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-
-  /* add book style */
-.addbook-section{
-    background-color: #c3bef0;
-    display: flex;
-    justify-content: center;
-  }
-.addbook-conatiner{
-    align-items: center;
-    margin: 0 auto;
-  }
-.actual-form .actual-form-div {
-    /* width: 90%; */
-    position: relative;
-  }
-.actual-form input
-   {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    background-color: #f4eeff;
-    border: none;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    line-height: 1.364rem;
-    color: #000000;
-  }
-  #email-field:focus {
-    outline: none;
-  }
-  
-  .btn-send{
-    /* width: 90%; */
-    width: 100%;
-    border: none;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    line-height: 21.82px;
-    color: #cca8e9;
-    border: #cca8e9 1px solid;
-    background-color: #ffffff;
-    border-radius: 7px;
-    padding: 15px;
-  }
-  .addbook-conatiner h2{
-    font-family: 'Nunito-bold', sans-serif;
-    font-size: 1.875rem;
-    line-height: 2.558rem;
-    color: #000000;
-    margin: 0 auto;
-    padding: 1.625rem;
-    text-align: center; 
-  }
-.error-text {
-    color: red;
-    font-family: "Nunito";
-    font-size: 0.7rem;
-    align-items: baseline;
-    margin-bottom: 0;
- } 
- /* delete arrows */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+  height: auto;
+  /* position: fixed;
+  z-index: 9999; */
+}
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.nav-ul-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.6rem;
+}
+.nav-a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
+  color: #0a0909;
+}
+.burger-bar {
+  display: none;
+  cursor: pointer;
+}
+.burger-line {
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 0.3rem auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #2b2626;
 }
 
+/* First section style */
+.mybooks-section {
+  background-color: #defcf9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* align-items: center;
+  height: 100vh; */ 
+}
 
+.mybooks-container {
+  text-align: center;
+}  
+.mybooks-container h2{
+font-family: 'Nunito-bold', sans-serif;
+font-size: 1.875rem;
+line-height: 2.558rem;
+color: #0a0909;
+margin: 0 auto;
+padding: 1.625rem;
+}
+.book-item {
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-bottom: 1rem; 
+  border: 1px solid #cca8e9;
+  padding: 1rem;
+  font-family: 'Nunito', sans-serif;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.delete-btn{
-  margin: 0.5rem;
+.book-item.expanded {
+width: 100%;
+margin: 1rem auto;
+}
+
+.book-details {
+  font-family: 'Nunito', sans-serif;
+  margin-top: 0.5rem;
+  border: 1px solid #cca8e9;
+  padding: 1rem;
+  display: none;
+  width: 60%;
+  margin: auto;
+}
+.book-details.active {
+  display: block;
+  margin-bottom: 0rem;
+}
+.book-details img {
+ max-width: 100%;
+-o-object-fit: contain;
+   object-fit: contain;
+}
+
+/* search bar */
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.875rem;
+  border: 0.5px solid #cca8e9;  
+
+}
+
+#search-btn {
+  margin-left: 0.5rem;
   font-family: 'Nunito', sans-serif;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
-  background-color: #3d0f63;
+  background-color: #cca8e9;
   color: #fff;
   border: none;
+  cursor: pointer;
+}
+
+
+/* add book style */
+.addbook-section{
+  background-color: #c3bef0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.addbook-conatiner{
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+.actual-form .actual-form-div {
+  /* width: 90%; */
+  position: relative;
+  margin-bottom: 1rem;
+
+}
+.actual-form input
+ {
+  width: 100%;
+  padding: 1rem;
+  /* margin-bottom: 0.5rem; */
+  background-color: #f4eeff;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  line-height: 1.364rem;
+  color: #000000;
+}
+#email-field:focus {
+  outline: none;
+}
+
+.btn-send{
+  /* width: 90%; */
+  width: 100%;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  line-height: 21.82px;
+  color: #cca8e9;
+  border: #cca8e9 1px solid;
+  background-color: #ffffff;
+  border-radius: 7px;
+  padding: 15px;
+}
+.addbook-conatiner h2{
+  font-family: 'Nunito-bold', sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.558rem;
+  color: #000000;
+  margin: 0 auto;
+  padding: 1.625rem;
+  text-align: center; 
+}
+.error-text {
+  color: red;
+  font-family: "Nunito";
+  font-size: 0.7rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0.5rem;
+} 
+/* delete arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.delete-btn{
+margin: 0.5rem;
+font-family: 'Nunito', sans-serif;
+font-size: 0.875rem;
+padding: 0.5rem 1rem;
+background-color: #cca8e9;
+color: #fff;
+border: none;
 }
